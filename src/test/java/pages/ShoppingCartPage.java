@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import universal.UniversalForSteps;
+import support.World;
 
 public class ShoppingCartPage {
 
 	WebDriver driver;
 
-	UniversalForSteps UniversalForSteps;
+	World UniversalForSteps;
 
 	
 	//buttons: increase or decrease quantity, remove

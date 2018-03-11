@@ -1,4 +1,4 @@
-package universalStoreMenus;
+package pages;
 
 import java.util.concurrent.TimeUnit;
 

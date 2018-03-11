@@ -7,12 +7,12 @@ import org.openqa.selenium.support.FindBy;
 
 import com.gargoylesoftware.htmlunit.javascript.host.payment.PaymentAddress;
 
-import universal.UniversalForSteps;
+import support.World;
 
 public class CheckoutPage {
 
 	WebDriver driver;
-	UniversalForSteps UniversalForSteps;
+	World UniversalForSteps;
 
 	// Sign in
 

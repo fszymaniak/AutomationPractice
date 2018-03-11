@@ -1,4 +1,4 @@
-package universalStoreMenus;
+package pages;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,19 +16,19 @@ public class StoreMenu {
 
 
 	@FindBy(xpath = "//div[@class='container']//input[@id='search_query_top']")
-	public WebElement searchInputOnTop;
+	public WebElement searchInputOnTopXP;
 	
 	@FindBy(xpath = "//form[@id='searchbox']//button[contains(@name, 'submit_search')]")
-	public WebElement submitSearchButton;
+	public WebElement submitSearchButtonXP;
 	
 	@FindBy(xpath = "//div[@class='shopping_cart']//a[contains(@title,'View my shopping cart')]")
-	public WebElement shoppingCartButton;
+	public WebElement shoppingCartButtonXP;
 	
 	@FindBy(xpath = "//a[@id='button_order_cart']")
-	public WebElement checkoutButton;
+	public WebElement checkoutButtonXP;
 	
 	@FindBy(xpath = "//div[@class='shopping_cart']//a[contains(@title,'View my shopping cart')]//span[contains(@class,'quantity')]")
-	public WebElement quantityInBasket;
+	public WebElement quantityInBasketXP;
 	
 	
 	public WebElement getNavigationElementFromTopNav(String navElementName, WebDriver driver) {
@@ -68,7 +68,7 @@ public class StoreMenu {
 	
 	public void mouseActionOnBasket() {
 		Actions builder = new Actions(driver);
-		builder.moveToElement(this.shoppingCartButton).build().perform();
+		builder.moveToElement(this.shoppingCartButtonXP).build().perform();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
